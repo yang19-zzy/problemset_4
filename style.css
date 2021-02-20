@@ -145,4 +145,5 @@ input {
 #cart {
     border: black solid 3px;
     padding: 10px;
+    /* width: 500px; */
 }
