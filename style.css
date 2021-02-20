@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-color: #bfdeff;
+}
+
+h1, h3 {
+    padding: 20px 40px;
+}
+
+h4 {
+    font-size: medium;
+}
+
+/* nav ul {
+    align-self: center;
+    width: 50%;
+    list-style-type: none;
+    margin: auto;
+    padding: 25PX;
+    background-color: #f7e68d;
+    text-align: center;
+} */
+
+.button {
+    /* background-color: white; */
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.button1 {
+    margin-left: 20px;
+}
+
+li {
+    display: inline;
+    /* padding: 20px 10px; */
+    font: 30px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #2371c4;
+    color: white;
+    font-weight: bold;
+}
+
+textarea {
+    resize:both;
+}
+
+/* section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
+
+.item {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.item * {
+    align-self: start;;
+}
+.item img {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+#notice, main {
+    margin: 15px 40px 30px 40px;
+    font-size: 23px;
+    padding: 10px 10px 10px 10px;
+}
+
+#notice em {
+    font-size: 25px;
+
+}
+
+form {
+    font-size: 20px;
+}
+address {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.color1 {
+    background-color: #f7e68d;
+    color: rgb(231, 74, 74);
+}
+
+.color2 {
+    background-color: #000000;
+    color: white;
+}
+
+#num-items {
+    display: inline;
+    color: white;
+    background-color: tomato;
+    border-radius: 2px;
+    padding: 0 3px;
+}
+
+input {
+    font-size: 20px;
+}
+
+#ringfit-num, #switch-num {
+    display: inline;
+}
+
+#close {
+    position: relative;
+    left: 75%;
+}
