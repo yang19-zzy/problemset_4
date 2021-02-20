@@ -25,7 +25,6 @@ addbtn_ringfit.addEventListener("click",()=>{
   ringfitNum.textContent = i+1;
   console.log("ringfitNum",ringfitNum.textContent);
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-  cartLists[ringfit] = i;
 });
 minusbtn_ringfit.addEventListener("click",()=>{
   let i = parseInt(ringfitNum.textContent);
@@ -35,7 +34,6 @@ minusbtn_ringfit.addEventListener("click",()=>{
     ringfitNum.textContent = 0;
   };
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-  cartLists[ringfit] = i;
 });
 
 // switch
@@ -48,7 +46,6 @@ addbtn_switch.addEventListener("click",()=>{
   switchNum.textContent = i+1;
   console.log("switchNum",switchNum.textContent);
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-  cartLists[ringfit] = i;
 });
 minusbtn_switch.addEventListener("click",()=>{
   let i = parseInt(switchNum.textContent);
@@ -58,7 +55,6 @@ minusbtn_switch.addEventListener("click",()=>{
     switchNum.textContent = 0;
   };
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-  cartLists[ringfit] = i;
 });
 
 // console.log('carlist',cartLists);
