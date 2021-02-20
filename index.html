@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Problem Set 4</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="cart.js"></script>
     <script defer src="notice.js"></script>
 </head>
 <body>
@@ -14,7 +13,6 @@
             <ul>
                 <li><a href="./index.html" class="button button1">Home</a></li>
                 <li><a href="./contact.html" class="button">Contect</a></li>
-                <li id="number-of-items-in-cart">Your Cart<div id="num-items">0</div></li>
             </ul>
         </nav>
     </header>
@@ -52,11 +50,18 @@
 
             </div>
 
-            <div class="item more-items">
+            <div class="item more-items" style="display: none;">
                 <img src="more.png" alt="Coming soon">
                 <h4>Coming soon...</h4>
 
             </div>
+
+            <div id="cart">
+                <div id="number-of-items-in-cart">Your Cart</div>
+                <div id="num-block">Number of Items -<div id="num-items"></div></div>
+                <div id="total-block">Total - <div id="total"></div></div>
+            </div>
+
         </section>
         
     </main>

@@ -66,13 +66,16 @@ textarea {
 } */
 
 .item {
-    display: block;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 100px;
+    grid-template-rows: 1fr;
+    
     margin: 10px 0;
 }
 
 .item * {
-    align-self: start;;
+    justify-self: center;
+    align-self: center;
 }
 .item img {
     width: 200px;
@@ -118,10 +121,10 @@ address {
     color: white;
 }
 
-#num-items {
+#num-items, #total {
     display: inline;
-    color: white;
-    background-color: tomato;
+    color: tomato;
+    /* background-color: tomato; */
     border-radius: 2px;
     padding: 0 3px;
 }
@@ -137,4 +140,9 @@ input {
 #close {
     position: relative;
     left: 75%;
+}
+
+#cart {
+    border: black solid 3px;
+    padding: 10px;
 }

@@ -12,9 +12,16 @@ setInterval(function() {
 
 
 let numItems = document.getElementById("num-items");
+let total = document.getElementById("total");
 console.log("numItems",numItems.textContent);
 const switch_ = document.getElementById("switch");
 const ringfit = document.getElementById("fit-ring");
+
+
+function calculateTotal(a,b) {
+  return "$" + a*298.80 + b*78.80;
+};
+
 
 // ringfit
 let ringfitNum = document.getElementById("ringfit-num");
@@ -25,6 +32,7 @@ addbtn_ringfit.addEventListener("click",()=>{
   ringfitNum.textContent = i+1;
   console.log("ringfitNum",ringfitNum.textContent);
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  total.innerText = calculateTotal(parseInt(ringfitNum.textContent), parseInt(switchNum.textContent));
 });
 minusbtn_ringfit.addEventListener("click",()=>{
   let i = parseInt(ringfitNum.textContent);
