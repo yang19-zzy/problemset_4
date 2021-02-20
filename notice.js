@@ -65,21 +65,9 @@ minusbtn_switch.addEventListener("click",()=>{
   numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
 });
 
-// console.log('carlist',cartLists);
-// console.log(numItems.textContent);
-// numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-// for (i=0;i<buttons.length;i++) {
-//   buttons[i].addEventListener("click", ()=>{
-//     count++;
-//     showNumItems(count);
-//   });
-// };
 
 // close notice
 let myNotice = document.getElementById("notice");
-function closeNotice() {
-  console.log('notice closed');
-}
 
 myNotice.addEventListener("click", (event)=>{
   console.log('notice clicked')
@@ -87,5 +75,5 @@ myNotice.addEventListener("click", (event)=>{
   if (event.target.id === "close"){
     console.log(myNotice);
     myNotice.style.display = "none";
-  }
+  };
 });
