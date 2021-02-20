@@ -19,7 +19,7 @@ const ringfit = document.getElementById("fit-ring");
 
 
 function calculateTotal(a,b) {
-  return "$" + a*298.80 + b*78.80;
+  return "$" + Math.round(a*78.80 + b*298.80);
 };
 
 
@@ -31,8 +31,10 @@ addbtn_ringfit.addEventListener("click",()=>{
   let i = parseInt(ringfitNum.textContent);
   ringfitNum.textContent = i+1;
   console.log("ringfitNum",ringfitNum.textContent);
-  numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
-  total.innerText = calculateTotal(parseInt(ringfitNum.textContent), parseInt(switchNum.textContent));
+  let x = parseInt(ringfitNum.textContent);
+  let y = parseInt(switchNum.textContent);
+  numItems.innerText =  x + y;
+  total.innerText = calculateTotal(x, y);
 });
 minusbtn_ringfit.addEventListener("click",()=>{
   let i = parseInt(ringfitNum.textContent);
@@ -41,7 +43,11 @@ minusbtn_ringfit.addEventListener("click",()=>{
   } else {
     ringfitNum.textContent = 0;
   };
-  numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  let x = parseInt(ringfitNum.textContent);
+  let y = parseInt(switchNum.textContent);
+  numItems.innerText =  x + y;
+  total.innerText = calculateTotal(x, y);
+  // numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
 });
 
 // switch
@@ -53,7 +59,11 @@ addbtn_switch.addEventListener("click",()=>{
   let i = parseInt(switchNum.textContent);
   switchNum.textContent = i+1;
   console.log("switchNum",switchNum.textContent);
-  numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  // numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  let x = parseInt(ringfitNum.textContent);
+  let y = parseInt(switchNum.textContent);
+  numItems.innerText =  x + y;
+  total.innerText = calculateTotal(x, y);
 });
 minusbtn_switch.addEventListener("click",()=>{
   let i = parseInt(switchNum.textContent);
@@ -62,7 +72,11 @@ minusbtn_switch.addEventListener("click",()=>{
   } else {
     switchNum.textContent = 0;
   };
-  numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  // numItems.innerText = parseInt(ringfitNum.textContent) + parseInt(switchNum.textContent);
+  let x = parseInt(ringfitNum.textContent);
+  let y = parseInt(switchNum.textContent);
+  numItems.innerText =  x + y;
+  total.innerText = calculateTotal(x, y);
 });
 
 
